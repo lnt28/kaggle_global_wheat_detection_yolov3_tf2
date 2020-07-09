@@ -20,7 +20,6 @@ flags.DEFINE_string('tfrecord', None, 'tfrecord instead of image')
 flags.DEFINE_string('output', './output.jpg', 'path to output image')
 flags.DEFINE_integer('num_classes', 1, 'number of classes in the model')
 
-
 def main(_argv):
     physical_devices = tf.config.experimental.list_physical_devices('GPU')
     for physical_device in physical_devices:

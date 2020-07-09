@@ -1,5 +1,3 @@
-from absl import flags
-from absl.flags import FLAGS
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras import Model
@@ -22,10 +20,6 @@ from tensorflow.keras.losses import (
 )
 from .utils import broadcast_iou
 
-# flags.DEFINE_integer('yolo_max_boxes', 1000,
-#                      'maximum number of boxes per image')
-# flags.DEFINE_float('yolo_iou_threshold', 0.5, 'iou threshold')
-# flags.DEFINE_float('yolo_score_threshold', 0.5, 'score threshold')
 yolo_max_boxes = 1000
 yolo_iou_threshold = 0.5
 yolo_score_threshold = 0.5
